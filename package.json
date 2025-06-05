@@ -1,12 +1,17 @@
 {
-  "name": "pruebasol",
+  "name": "solana-ruleta",
   "version": "1.0.0",
+  "description": "dApp Ruleta / Jackpot en Solana",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "live-server public --port=5500",
+    "build": "echo \"No hay build específico; sirve archivos estáticos\"",
+    "test": "echo \"No hay tests definidos aún\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "@solana/web3.js": "^1.71.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }
