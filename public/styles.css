@@ -1,0 +1,125 @@
+/* Reset sencillo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y contenedor */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ocultar elementos con .hidden */
+.hidden {
+  display: none;
+}
+
+/* Formulario de apuesta */
+#bet-section {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  width: 300px;
+}
+
+#bet-section h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#betForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#betForm label {
+  margin-bottom: 0.5rem;
+}
+
+#betForm input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#betForm button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#betForm button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Temporizador */
+#timer {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Sección de ruleta */
+#roulette-section {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 550px;
+  text-align: center;
+}
+
+#rouletteCanvas {
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+#spinBtn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#spinBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#winnerMessage {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

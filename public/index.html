@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruleta Solana dApp</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Ruleta Solana - Apuesta y Gana</h1>
+    <button id="connectWalletBtn">Conectar Wallet</button>
+    <span id="walletAddress"></span>
+  </header>
+
+  <main>
+    <!-- Sección de apuesta -->
+    <section id="bet-section" class="hidden">
+      <h2>Apuesta SOL</h2>
+      <form id="betForm">
+        <label for="betAmount">Cantidad (SOL):</label>
+        <input type="number" id="betAmount" min="0.01" step="0.01" required />
+        <button type="submit" id="placeBetBtn">Apostar</button>
+      </form>
+      <p id="currentPool">Pool actual: 0 SOL</p>
+      <p id="timer">Tiempo restante: <span id="timeLeft">30</span> segundos</p>
+    </section>
+
+    <!-- Sección de ruleta -->
+    <section id="roulette-section" class="hidden">
+      <canvas id="rouletteCanvas" width="500" height="500"></canvas>
+      <button id="spinBtn" disabled>Girar Ruleta</button>
+      <p id="winnerMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollado en Solana Devnet</p>
+  </footer>
+
+  <script src="../src/js/solana.js"></script>
+  <script src="../src/js/app.js"></script>
+</body>
+</html>
