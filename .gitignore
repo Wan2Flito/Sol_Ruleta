@@ -17,3 +17,5 @@ desktop.ini
 # Archivos de build o dist (si los generas)
 dist/
 build/
+
+pool.json
