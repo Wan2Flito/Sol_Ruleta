@@ -1,0 +1,19 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Visual Studio Code
+.vscode/
+
+# Sistema Windows
+Thumbs.db
+desktop.ini
+
+# Dotenv / claves privadas
+.env
+*.secret
+
+# Archivos de build o dist (si los generas)
+dist/
+build/
